@@ -78,9 +78,10 @@
 ### 3.
 
 阿里云OSS实现文件上传，应该以后会有用到的时候，到时候来取，配置好即插即用
+![image](https://github.com/yourkin666/OA-yourkin666/assets/146162315/5cff62d3-bf2d-4507-89e6-d94d8a4cf008)
 
 
-
+在OSS工具类里面现用现配
 
 
 ### 4.
