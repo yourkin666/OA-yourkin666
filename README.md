@@ -13,7 +13,7 @@
 
 ​		登陆注册：MD5加密、手动加盐实现
 
-​		认证：JWT(Json Web Token) 、拦截器、ThreadLocal 工具类的使用，Redis
+​		认证：JWT 、拦截器、ThreadLocal 工具类的使用，Redis
 
 ​		授权：手写@RoleCheck注解（具体用拦截器 + ThreadLocal 实现）
 
