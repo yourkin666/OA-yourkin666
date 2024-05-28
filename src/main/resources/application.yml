@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/oa
+    username: root
+    password: 111111
+
+  data:
+    redis:
+      port: 6379
+      host: localhost
+  ai:
+    openai:
+      api-key: xxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+      base-url: xxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
