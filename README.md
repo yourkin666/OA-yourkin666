@@ -43,7 +43,7 @@
 ![屏幕截图 2024-06-02 220019](https://github.com/yourkin666/OA-yourkin666/assets/146162315/8173d8bc-7783-4356-9bfd-ab74349152f1)
 
 
-考核的流程，我先按照自己逻辑手写完成了，后面结合flowable还做一个报销流程
+考核的流程，我先按照自己逻辑完成了，后面结合flowable还做一个报销流程
 
 ![屏幕截图 2024-06-02 220417](https://github.com/yourkin666/OA-yourkin666/assets/146162315/d8624372-9070-411d-9da0-e1a9f45f2972)
 
