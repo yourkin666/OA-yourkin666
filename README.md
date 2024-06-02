@@ -94,6 +94,10 @@ Spring AI 也是才出的东西，额就是一个项目里调接口与ai聊天�
 
 OA项目前刚学了计网，又了解一种网络协议Websocket，做个聊天室，相关后端代码放在了ws包里
 
+### 6.
+
+用validation框架实现了username和password的长度校验，还有email，url的格式检查
+
 
 ### 心得：
 
