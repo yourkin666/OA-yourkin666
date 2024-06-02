@@ -107,7 +107,7 @@ OA项目前刚学了计网，又了解一种网络协议Websocket，做个聊天
 
 1.更体会到了MVC架构的解耦合和专注业务开发的设计思想，改掉之前项目的坏毛病，尽可能的把所有业务处理放在ServiceImpl中实现
 
-2.Threadlocal真的非常好用，应用场景很多
+2.Threadlocal真的非常好用，应用场景很多  这是我写的一些理解https://blog.csdn.net/2302_80742310/article/details/139353133?spm=1001.2014.3001.5501
 
 
 
