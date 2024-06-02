@@ -44,7 +44,8 @@
 
 
 申请相关的功能，我先按照自己逻辑手写完成了，后面结合flowable做一个报销流程
-![Uploading image.png…]()
+
+![屏幕截图 2024-06-02 220417](https://github.com/yourkin666/OA-yourkin666/assets/146162315/d8624372-9070-411d-9da0-e1a9f45f2972)
 
 
 
