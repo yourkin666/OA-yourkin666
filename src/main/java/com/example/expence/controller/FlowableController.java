@@ -61,13 +61,20 @@ public class FlowableController {
      * @param userId    用户Id
      */
     @GetMapping( "/list")
-    public Result list(String userId) {
-        List<Task> tasks = taskService.createTaskQuery().taskAssignee(userId).orderByTaskCreateTime().desc().list();
-        for (Task task : tasks) {
-            System.out.println(task.toString());
+    public List<Map<String, Object>> findUserAgentTask(String userId) {
+        //1.查找指定用户的一个待办任务
+        List<Task> taskList = taskService.createTaskQuery()
+                .taskAssignee(userId)
+                .list();
+        List<Map<String,Object>> list = new ArrayList<>();
+        for (Task task : taskList) {
+            Map<String,Object> map =  new HashMap<>();
+            map.put("TaskId",task.toString());
+            list.add(map);
         }
-        return Result.success();
-    }
+        return list;
+
+    }    
 
     /**
      * 批准
