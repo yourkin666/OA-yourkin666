@@ -110,6 +110,7 @@ OA项目前刚学了计网，又了解一种网络协议Websocket，做个聊天
 2.Threadlocal真的非常好用，应用场景很多  这是我写的一些理解https://blog.csdn.net/2302_80742310/article/details/139353133?spm=1001.2014.3001.5501
 
 3.工作流那儿返回值的时候，遇到了Could not write JSON: lazy loading outside command context懒加载的报误，由于Task对象中的字段的原因可能会导致一直循环，会导致无法转换json，所以改变一下返回数据。可以用对象去接受，也可以用Map接收。返回相关数据返回就好了。
+或者.includeTaskLocalVariables()  // 初始化表单键值也可以解决懒加载问题
 
 
 
