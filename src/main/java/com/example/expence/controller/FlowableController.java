@@ -47,8 +47,10 @@ public class FlowableController {
     public String addExpense(String userId, Integer money, String username, String descption) {
         //启动流程
         HashMap<String, Object> map = new HashMap<>();
+        Map<String,Object> claims = ThreadLocalUtil.get();
+        Object userName = claims.get("userName");
         map.put("taskUser", userId);
-        map.put("user", username);
+        map.put("user", userName);
         map.put("money", money);
         map.put("descption", descption);
         ProcessInstance processInstance = runtimeService.startProcessInstanceByKey("Expense", map);
