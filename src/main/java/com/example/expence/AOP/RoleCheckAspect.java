@@ -34,7 +34,6 @@ public class RoleCheckAspect {
     public Object checkRole(ProceedingJoinPoint joinPoint, RoleCheck roleCheck) throws Throwable {
         HttpServletRequest request = ((ServletRequestAttributes) RequestContextHolder.getRequestAttributes()).getRequest();
         String[] roles = roleCheck.roles();
-        // 这里简化处理，实际应用中需要从请求中获取用户的角色字段
         boolean hasPermission = hasPermission(request, roles);
         if (!hasPermission) {
             HttpServletResponse response = ((ServletRequestAttributes) RequestContextHolder.getRequestAttributes()).getResponse();
@@ -45,7 +44,6 @@ public class RoleCheckAspect {
     }
 
     private boolean hasPermission(HttpServletRequest request, String[] roles) {
-        // 实现检查用户是否有权限的逻辑
         Map<String,Object> claims = ThreadLocalUtil.get();
         Object id = claims.get("id");
 
