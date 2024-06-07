@@ -30,27 +30,25 @@ public class RoleCheckAspect {
     private UserMapper userMapper;
 
 
-    @Around("@annotation(roleCheck)")
+   @Around("@annotation(roleCheck)")
     public Object checkRole(ProceedingJoinPoint joinPoint, RoleCheck roleCheck) throws Throwable {
-        HttpServletRequest request = ((ServletRequestAttributes) RequestContextHolder.getRequestAttributes()).getRequest();
         String[] roles = roleCheck.roles();
-        boolean hasPermission = hasPermission(request, roles);
+        boolean hasPermission = hasPermission(roles);
         if (!hasPermission) {
-            HttpServletResponse response = ((ServletRequestAttributes) RequestContextHolder.getRequestAttributes()).getResponse();
-            response.setStatus(HttpStatus.FORBIDDEN.value());
-            return null;
+            return Result.error("你权限不够哦");
         }
         return joinPoint.proceed();
     }
 
-    private boolean hasPermission(HttpServletRequest request, String[] roles) {
+    private boolean hasPermission(String[] roles) {
         Map<String,Object> claims = ThreadLocalUtil.get();
         Object id = claims.get("id");
-
         // 获取用户角色的逻辑
         // 实际应用中需要从请求中获取用户的角色字段
         String userRole = userMapper.selectRoleById(id);
 //        contain方法看是否包含这个元素
         return Arrays.asList(roles).contains(userRole);
     }
+}
+
 }
