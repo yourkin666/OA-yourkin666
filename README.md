@@ -15,7 +15,7 @@
 
 ​		认证：JWT 、拦截器、ThreadLocal 工具类的使用，Redis
 
-​		授权：手写@RoleCheck注解（具体用拦截器 + ThreadLocal 实现）
+​		授权：手写@RoleCheck注解（AOP + ThreadLocal 实现）
 
 ​		异常处理：交给GlobalExceptionHandler
 
@@ -54,7 +54,7 @@
 
 {JWT、拦截器、ThreadLocal ，Redis }    实现认证
 
-{手写@RoleCheck注解（具体用拦截器 + ThreadLocal 实现）}     实现授权
+{手写@RoleCheck注解（具体用AOP + ThreadLocal 实现）}     实现授权
 
 
 
@@ -111,6 +111,8 @@ OA项目前刚学了计网，又了解一种网络协议Websocket，做个聊天
 
 3.工作流那儿返回值的时候，遇到了Could not write JSON: lazy loading outside command context懒加载的报误，由于Task对象中的字段的原因可能会导致一直循环，会导致无法转换json，所以改变一下返回数据。可以用对象去接受，也可以用Map接收。返回相关数据返回就好了。
 或者.includeTaskLocalVariables()  // 初始化表单键值也可以解决懒加载问题
+
+4.在授权时改变了之前用拦截器的思路，使用了AOP，使代码更加优雅，尽管他们都说优雅这个词不属于java
 
 
 
