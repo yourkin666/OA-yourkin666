@@ -11,13 +11,9 @@ public class WebConfig implements WebMvcConfigurer {
     @Autowired
     private LoginIntercepter loginIntercepter;
 
-    @Autowired
-    private RoleCheckInterceptor roleCheckInterceptor;
-
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
         registry.addInterceptor(loginIntercepter).excludePathPatterns("/user/login","/user/register");
-        registry.addInterceptor(roleCheckInterceptor) .addPathPatterns("/**"); // 拦截所有路径
     }
 
 }
