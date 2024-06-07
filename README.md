@@ -94,7 +94,8 @@ Spring AI 也是才出的东西，额就是一个项目里调接口与ai聊天�
 
 ### 5.
 
-OA项目前刚学了计网，又了解一种网络协议Websocket，做个聊天室，相关后端代码放在了ws包里
+又了解一种网络协议Websocket，聊天室相关后端代码放在了websocket包里，我把之前那种需要配置GetHttpConfig，还在用HttpSession传递用户信息的代码用threadlocal改写了，毕竟现在流行的是前后端项目，没怎么用Httpsession。
+但前端页面没有附上，目前我的水平只能读前端，所以效果可能不能展示。
 
 ### 6.
 
