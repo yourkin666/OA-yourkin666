@@ -102,7 +102,7 @@ Spring AI 也是才出的东西，额就是一个项目里调接口与ai聊天�
 用validation框架实现了username和password的长度校验，还有email，url的格式检查
 
 ### 7.
-使用redis存储tokem，实现修改密码，原先token失效，应重新登陆获取token的功能
+使用redis存储token，实现修改密码，原先token失效，应重新登陆获取token的功能
 
 ### 心得：
 
