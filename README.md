@@ -85,9 +85,6 @@
 ### 4.
 
 Spring AI 也是才出的东西，额就是一个项目里调接口与ai聊天的功能，增强OA系统工作效率
-我添加的是moonshot的免费api-key，以及代理域名base-url
-或者去淘宝买key也是可以的
-
 ![屏幕截图 2024-05-25 165140](https://github.com/yourkin666/OA-yourkin666/assets/146162315/5ff60053-c11f-41d4-a34e-7a780d019bbf)
 
 在yaml文件里面现用现配
