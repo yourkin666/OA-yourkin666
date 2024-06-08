@@ -68,18 +68,6 @@
 
 
 ### 4.
-
-Spring AI 也是才出的东西，额就是一个项目里调接口与ai聊天的功能，增强OA系统工作效率
-![屏幕截图 2024-05-25 165140](https://github.com/yourkin666/OA-yourkin666/assets/146162315/5ff60053-c11f-41d4-a34e-7a780d019bbf)
-
-在yaml文件里面现用现配
-
-### 5.
-
-又了解一种网络协议Websocket，聊天室相关后端代码放在了websocket包里，我把之前那种需要配置GetHttpConfig，还在用HttpSession传递用户信息的代码用threadlocal改写了，毕竟现在流行的是前后端项目，没怎么用Httpsession。
-但前端页面没有附上，目前我的水平只能读前端，所以效果可能不能展示。
-
-### 6.
 另外选用flowable工作流框架，对我还是很新的东西
 
 工作流框架可以说是技术框架和业务框架的结合
@@ -94,6 +82,20 @@ Spring AI 也是才出的东西，额就是一个项目里调接口与ai聊天�
 
 ![屏幕截图 2024-06-02 220417](https://github.com/yourkin666/OA-yourkin666/assets/146162315/d8624372-9070-411d-9da0-e1a9f45f2972)
 
+
+
+
+### 5.
+
+又了解一种网络协议Websocket，聊天室相关后端代码放在了websocket包里，我把之前那种需要配置GetHttpConfig，还在用HttpSession传递用户信息的代码用threadlocal改写了，毕竟现在流行的是前后端项目，没怎么用Httpsession。
+但前端页面没有附上，目前我的水平只能读前端，所以效果可能不能展示。
+
+### 6.
+
+Spring AI 也是才出的东西，额就是一个项目里调接口与ai聊天的功能，增强OA系统工作效率
+![屏幕截图 2024-05-25 165140](https://github.com/yourkin666/OA-yourkin666/assets/146162315/5ff60053-c11f-41d4-a34e-7a780d019bbf)
+
+在yaml文件里面现用现配
 
 ### 7.
 
